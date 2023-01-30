@@ -6,50 +6,48 @@ $("#currentDay").text(today.format("Do MMM YYYY HH:mm"));
 
 let workingHours = [
   {
-  name: "hour9",
-  value: 9
+    name: "9AM",
+    value: 9,
   },
   {
-  name: "hour10",
-  value: 10
+    name: "10AM",
+    value: 10,
   },
   {
-  name: "hour11",
-  value: 11
-  }
+    name: "11AM",
+    value: 11,
+  },
   {
-  name: "hour12",
-  value: 12,
-
-  "hour13",
-  "hour14",
-  "hour15",
-  "hour16",
-  "hour17",
+    name: "12PM",
+    value: 12,
+  },
+  {
+    name: "1PM",
+    value: 13,
+  },
+  {
+    name: "2PM",
+    value: 14,
+  },
+  {
+    name: "3PM",
+    value: 15,
+  },
+  {
+    name: "4PM",
+    value: 16,
+  },
+  {
+    name: "5PM",
+    value: 17,
+  },
 ];
-
-let hour9 = moment().hour(9);
-hour9.innerHTML = "9AM";
-let hour10 = moment().hour(10);
-hour10.innerHTML = "10AM";
-let hour11 = moment().hour(11);
-hour11.innerHTML = "11AM";
-let hour12 = moment().hour(12);
-hour12.innerHTML = "12PM";
-let hour13 = moment().hour(13);
-hour13.innerHTML = "1PM";
-let hour14 = moment().hour(14);
-hour14.innerHTML = "2PM";
-let hour15 = moment().hour(15);
-hour15.innerHTML = "3PM";
-let hour16 = moment().hour(16);
-hour16.innerHTML = "4PM";
-let hour17 = moment().hour(17);
-hour17.innerHTML = "5PM";
 
 function createTable() {
   let table = document.createElement("table");
+  $("table").addClass(".time-block");
   let tableRow = document.createElement("tr");
+  $("tr").addClass(".row");
   let th1 = document.createElement("th");
   th1.innerHTML = "Time";
   let th2 = document.createElement("th");
@@ -60,20 +58,41 @@ function createTable() {
   table.append(tableRow);
   for (let i = 0; i < workingHours.length; i++) {
     let tableRow = document.createElement("tr");
-    let td1 = document.createElement("td");
-    td1.innerHTML = workingHours[i];
-    let td2 = document.createElement("textarea");
-
-    let td3 = document.createElement("button");
-    tableRow.append(td1, td2, td3);
-    var btnImg = $("<i>").addClass("fas fa-save fa-2x");
-    td3.append(btnImg);
+    $("tr").addClass(".row");
+    let amPM = document.createElement("td");
+    amPM.innerHTML = workingHours[i].name;
+    let userInput = document.createElement("textarea");
+    let button = document.createElement("button");
+    $("button").addClass(".saveBtn");
+    tableRow.append(amPM, userInput, button);
     table.append(tableRow);
   }
   document.getElementById("timeCon").append(table);
+
+  button.addEventListener("click", function(event)
+  event.preventDefualt())
 }
 
 createTable();
+
+// let hour9 = moment().hour(9);
+// hour9.innerHTML = "9AM";
+// let hour10 = moment().hour(10);
+// hour10.innerHTML = "10AM";
+// let hour11 = moment().hour(11);
+// hour11.innerHTML = "11AM";
+// let hour12 = moment().hour(12);
+// hour12.innerHTML = "12PM";
+// let hour13 = moment().hour(13);
+// hour13.innerHTML = "1PM";
+// let hour14 = moment().hour(14);
+// hour14.innerHTML = "2PM";
+// let hour15 = moment().hour(15);
+// hour15.innerHTML = "3PM";
+// let hour16 = moment().hour(16);
+// hour16.innerHTML = "4PM";
+// let hour17 = moment().hour(17);
+// hour17.innerHTML = "5PM";
 
 // workingHours.forEach(function (workingHours) {
 //   let amPM = workingHours.timeName;
@@ -112,35 +131,8 @@ createTable();
 //     localStorage.setItem(key, value);
 //   });
 // });
-// /let events = ["", "", "", "", "", "", "", "", ""];
-// let saveButtons = [
-//   "hhh",
-//   "kkk",
-//   "lll",
-//   "hhh",
-//   "bbb",
-//   "kkk",
-//   ",,,",
-//   "lll",
-//   "jjj",
-// ];
 
 // let table =
-//   "<table><thead><tr><th>Time<th>Event</th><th>Save</th></tr></thead><tbody>";
-// for (i = 0; i < workingHours.length; i++) {
-//   table +=
-//     "<tr><td>" +
-//     workingHours[i] +
-//     "</td><td>" +
-//     events[i] +
-//     "</td><td>" +
-//     saveButtons[i] +
-//     "</td></th>";
-// }
-
-// table += "</tbody></table>";
-
-// divCon.innerHTML = table;
 
 // var button = $("<button>").addClass("saveBtn col-1");
 // row.append(button);
