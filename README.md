@@ -39,25 +39,12 @@
   <p>To meet the clients requirements I need to ensure:</p>
   
   <ul>
-   The app should:
-
-
-Display the current day at the top of the calender when a user opens the planner.
-
-
-Present timeblocks for standard business hours when the user scrolls down.
-
-
-Color-code each timeblock based on past, present, and future when the timeblock is viewed.
-
-
-Allow a user to enter an event when they click a timeblock
-
-
-Save the event in local storage when the save button is clicked in that timeblock.
-
-
-Persist events between refreshes of a page
+  <li>Display the current day at the top of the calender when a user opens the planner</li>
+  <li>Present timeblocks for standard business hours when the user scrolls down</li>
+  <li>Color-code each timeblock based on past, present, and future when the timeblock is viewed</li>
+  <li>Allow a user to enter an event when they click a timeblock</li>
+  <li>Save the event in local storage when the save button is clicked in that timeblock</li>
+  <li>Persist events between refreshes of a page</li>
   </ul>
   
   <br/>
@@ -66,7 +53,7 @@ Persist events between refreshes of a page
 
   <br/>
  
-  <p>To complete this task I have found my one-on-one tutoring session to be highly resourceful. Things we discussed included: prompt, confirm, aler and isNaN. Another resource I have used is w3schools. This website explains how to use Javascript, give examples and has exercises for you to complete.<br/>
+  <p>To complete this task I have found my one-on-one tutoring session to be highly resourceful. Things we discussed included: parent and siblings as well as setting and getting local storage. Another resource I have used is w3schools where I was able to practice getHours. I also read an article on moment.js from everydat.codes.<br/>
  <br/>
   
   <br/>
@@ -77,8 +64,7 @@ Persist events between refreshes of a page
 
   <p>Below is a screenshot of my password generator</p> 
   
- <img width="618" alt="Untitled" src="https://user-images.githubusercontent.com/118772733/213035860-4433d3c7-b69f-4a95-933a-7bda46f9b922.png">
-
+<img width="1324" alt="Untitled 3" src="https://user-images.githubusercontent.com/118772733/215907148-dc63814c-fc91-48ee-beff-c22439d53afb.png">
 
   <br/>
    
@@ -92,8 +78,9 @@ Persist events between refreshes of a page
   <br/>
   
   <ul>
-   <li>After learning about the spread syntax I was able to reduce the amount of code</li>
-   <li>In my one-to-one the tutor installed the Prettier extention on VS Code which helps your code to look better formated</li>
+   <li>I will need to spend more time to complete this project</li>
+   <li>I need to have the past/present/future classes display at the right times, display the times along the side and insert the button image</li>
+   <li>I was struggling to add class correctly before my one-on-one. Then I found out some jquery and javascript wont mix correctly</li>
 
    
 
