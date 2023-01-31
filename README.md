@@ -18,7 +18,7 @@
   
   <br/>
   
-  <p> Please find the link to my deployed application <a href="https://tyrkgithub.github.io/Password-Generator">here.</a> </p>
+  <p> Please find the link to my deployed application <a href="https://tyrkgithub.github.io/Online-Daily-Planner/">here.</a> </p>
   
   <br/>
   
